@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+img:hover,
+img:focus {
+    transform: scale(1.1);
+    outline: 2px solid blue;
+}
